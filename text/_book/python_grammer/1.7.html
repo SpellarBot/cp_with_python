@@ -1,0 +1,480 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.7. Loop(for) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1.8.html" />
+    
+    
+    <link rel="prev" href="1.6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    2. Python Grammer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1.html">
+            
+                <a href="1.1.html">
+            
+                    
+                    1.1. Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2.html">
+            
+                <a href="1.2.html">
+            
+                    
+                    1.2. Arithmetic Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3.html">
+            
+                <a href="1.3.html">
+            
+                    
+                    1.3. Variable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1.4.html">
+            
+                <a href="1.4.html">
+            
+                    
+                    1.4. String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="1.5.html">
+            
+                <a href="1.5.html">
+            
+                    
+                    1.5. Conditional Branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="1.6.html">
+            
+                <a href="1.6.html">
+            
+                    
+                    1.6. Loop(while)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.7" data-path="1.7.html">
+            
+                <a href="1.7.html">
+            
+                    
+                    1.7. Loop(for)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="1.8.html">
+            
+                <a href="1.8.html">
+            
+                    
+                    1.8. Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.7. Loop(for)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="17-loopfor">1.7. Loop(for)</h2>
+<h3 id="for&#x6587;">for&#x6587;</h3>
+<p><code>for</code>&#x3082;<code>while</code>&#x3068;&#x540C;&#x69D8;&#x306B;&#xFF0C;&#x7E70;&#x308A;&#x8FD4;&#x3057;&#x51E6;&#x7406;&#x3092;&#x5B9F;&#x884C;&#x3055;&#x305B;&#x308B;&#x969B;&#x306B;&#x5229;&#x7528;&#x3057;&#x307E;&#x3059;&#xFF0E;
+&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x8A18;&#x8FF0;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> &#x5909;&#x6570; <span class="hljs-keyword">in</span> &#x53CD;&#x5FA9;&#x53EF;&#x80FD;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;:
+    &#x51E6;&#x7406;
+</code></pre>
+<p>&#x3053;&#x3053;&#x3067;&#x3044;&#x3046;<code>&#x53CD;&#x5FA9;&#x53EF;&#x80FD;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;</code>&#x3068;&#x306F;&#xFF0C;&#x8AAD;&#x3093;&#x3067;&#x5B57;&#x306E;&#x3054;&#x3068;&#x304F;&#x7E70;&#x308A;&#x8FD4;&#x3057;&#x304C;&#x53EF;&#x80FD;&#x306A;&#x30E2;&#x30CE;&#x306E;&#x3053;&#x3068;&#x3067;&#x3059;&#xFF0E;<br>&#x5177;&#x4F53;&#x7684;&#x306B;&#x306F;&#xFF0C;&#x6587;&#x5B57;&#x5217;&#x3084;&#x5F8C;&#x8FF0;&#x3059;&#x308B;<code>range</code>&#xFF0C;<code>list</code>, <code>tuple</code>&#x7B49;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#xFF0E;</p>
+<h3 id="for&#x3068;&#x6587;&#x5B57;&#x5217;">for&#x3068;&#x6587;&#x5B57;&#x5217;</h3>
+<p><code>&#x53CD;&#x5FA9;&#x53EF;&#x80FD;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;</code>&#x306E;&#x90E8;&#x5206;&#x306B;&#x6587;&#x5B57;&#x5217;&#x3092;&#x30BB;&#x30C3;&#x30C8;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x30EB;&#x30FC;&#x30D7;&#x304C;1&#x56DE;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;&#x305F;&#x3073;&#x306B;&#x6587;&#x5B57;&#x5217;&#x306B;&#x542B;&#x307E;&#x308C;&#x308B;&#x6587;&#x5B57;&#x304C;&#x9806;&#x756A;&#x306B;1&#x6587;&#x5B57;&#x305A;&#x3064;&#x5909;&#x6570;&#x306B;&#x30BB;&#x30C3;&#x30C8;&#x3055;&#x308C;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>string = <span class="hljs-string">&quot;hello&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> letter <span class="hljs-keyword">in</span> string:
+<span class="hljs-meta">... </span>    print(letter)
+<span class="hljs-meta">... </span>
+h
+e
+l
+l
+o
+</code></pre>
+<h3 id="for&#x3068;range">for&#x3068;range</h3>
+<p><code>&#x53CD;&#x5FA9;&#x53EF;&#x80FD;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;</code>&#x306E;&#x90E8;&#x5206;&#x306B;<code>range</code>&#x3092;&#x30BB;&#x30C3;&#x30C8;&#x3059;&#x308B;&#x3068;&#xFF0C;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x7BC4;&#x56F2;&#x3084;&#x30B9;&#x30C6;&#x30C3;&#x30D7;&#x306E;&#x6574;&#x6570;&#x5024;&#x304C;&#x30EB;&#x30FC;&#x30D7;&#x304C;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;&#x305F;&#x3073;&#x306B;&#x5909;&#x6570;&#x306B;&#x30BB;&#x30C3;&#x30C8;&#x3055;&#x308C;&#x307E;&#x3059;&#xFF0E;<br>&#x53B3;&#x5BC6;&#x306B;&#x3044;&#x3046;&#x3068;&#xFF0C;<code>range</code>&#x306F;&#x30B7;&#x30FC;&#x30B1;&#x30F3;&#x30B9;&#x3092;&#x751F;&#x6210;&#x3059;&#x308B;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x3059;&#xFF0E;</p>
+<p><code>range</code>&#x306E;&#x8A18;&#x8FF0;&#x65B9;&#x6CD5;&#x3068;&#x305D;&#x306E;&#x610F;&#x5473;&#x3092;&#x4EE5;&#x4E0B;&#x306B;&#x793A;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x8A18;&#x8FF0;&#x6CD5;</th>
+<th style="text-align:left">&#x610F;&#x5473;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>range(N)</code></td>
+<td style="text-align:left"><code>0</code>&#x304B;&#x3089;<code>N-1</code>&#x307E;&#x3067;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>range(N, M)</code></td>
+<td style="text-align:left"><code>N</code>&#x304B;&#x3089;<code>M-1</code>&#x307E;&#x3067;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>range(N, M, S)</code></td>
+<td style="text-align:left"><code>N</code>&#x304B;&#x3089;<code>M-1</code>&#x307E;&#x3067;<code>S</code>&#x3054;&#x3068;&#x306B;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4EE5;&#x4E0B;&#x306B;&#x5B9F;&#x4F8B;&#x3092;&#x793A;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+<span class="hljs-meta">... </span>    print(i)
+<span class="hljs-meta">... </span>
+<span class="hljs-number">0</span>
+<span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+<span class="hljs-number">3</span>
+<span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>):
+<span class="hljs-meta">... </span>    print(i)
+<span class="hljs-meta">... </span>
+<span class="hljs-number">2</span>
+<span class="hljs-number">3</span>
+<span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>, <span class="hljs-number">2</span>):
+<span class="hljs-meta">... </span>    print(i)
+<span class="hljs-meta">... </span>
+<span class="hljs-number">1</span>
+<span class="hljs-number">3</span>
+<span class="hljs-number">5</span>
+<span class="hljs-number">7</span>
+<span class="hljs-number">9</span>
+</code></pre>
+<h3 id="&#x8907;&#x6570;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;zip">&#x8907;&#x6570;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;(zip)</h3>
+<p>&#x8907;&#x6570;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;1&#x3064;&#x306E;for&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x4E2D;&#x3067;&#x540C;&#x6642;&#x306B;&#x51E6;&#x7406;&#x3057;&#x305F;&#x3044;&#x3068;&#x304D;&#x306F;<code>zip</code>&#x95A2;&#x6570;&#x3092;&#x7528;&#x3044;&#x307E;&#x3059;&#xFF0E;<br>&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x8A18;&#x8FF0;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code>for &#x5909;&#x6570;1, &#x5909;&#x6570;2, ..., &#x5909;&#x6570;N in zip(&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;1, &#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;2, ..., &#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;N):
+    &#x51E6;&#x7406;
+</code></pre><p>&#x4EE5;&#x4E0B;&#x306B;&#x5B9F;&#x4F8B;&#x3092;&#x793A;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> l1, l2, l3 <span class="hljs-keyword">in</span> zip(s1, s2, s3):
+<span class="hljs-meta">... </span>    print(l1, l2, l3)
+<span class="hljs-meta">... </span>
+a d g
+b e h
+c f i
+</code></pre>
+<h3 id="enumerate">enumerate</h3>
+<p>&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x8981;&#x7D20;&#x3060;&#x3051;&#x3067;&#x306A;&#x304F;&#x6DFB;&#x3048;&#x5B57;&#x3082;&#x540C;&#x6642;&#x306B;&#x53D6;&#x5F97;&#x3057;&#x305F;&#x3044;&#x3068;&#x304D;&#x306F;<code>enumerate</code>&#x95A2;&#x6570;&#x3092;&#x7528;&#x3044;&#x307E;&#x3059;&#xFF0E;
+&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x8A18;&#x8FF0;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> &#x6DFB;&#x5B57;&#x5909;&#x6570;&#xFF0C;&#x8981;&#x7D20;&#x5909;&#x6570; <span class="hljs-keyword">in</span> enumerate(&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;):
+    &#x51E6;&#x7406;
+</code></pre>
+<p>&#x4EE5;&#x4E0B;&#x306B;&#x5B9F;&#x4F8B;&#x3092;&#x793A;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s = <span class="hljs-string">&quot;hello&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> i, l <span class="hljs-keyword">in</span> enumerate(s):
+<span class="hljs-meta">... </span>    print(i, l)
+<span class="hljs-meta">... </span>
+<span class="hljs-number">0</span> h
+<span class="hljs-number">1</span> e
+<span class="hljs-number">2</span> l
+<span class="hljs-number">3</span> l
+<span class="hljs-number">4</span> o
+</code></pre>
+<p>&#x306A;&#x304A;&#xFF0C;<code>enumerate</code>&#x95A2;&#x6570;&#x306E;<code>start</code>&#x5F15;&#x6570;&#x306B;&#x5024;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#xFF0C;&#x958B;&#x59CB;&#x5024;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s = <span class="hljs-string">&quot;hello&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> i, l <span class="hljs-keyword">in</span> enumerate(s, start=<span class="hljs-number">100</span>):
+<span class="hljs-meta">... </span>    print(i, l)
+<span class="hljs-meta">... </span>
+<span class="hljs-number">100</span> h
+<span class="hljs-number">101</span> e
+<span class="hljs-number">102</span> l
+<span class="hljs-number">103</span> l
+<span class="hljs-number">104</span> o
+</code></pre>
+<h1 id="practice">Practice</h1>
+<ul>
+<li><p><code>for</code>&#x3068;<code>range</code>&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x6761;&#x4EF6;&#x5206;&#x5C90;&#x3092;&#x7528;&#x3044;&#x305A;&#x306B;<code>1</code>&#x304B;&#x3089;<code>100</code>&#x306E;&#x7BC4;&#x56F2;&#x306B;&#x5B58;&#x5728;&#x3059;&#x308B;&#x5076;&#x6570;&#x306E;&#x307F;&#x3092;&#x51FA;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
+</li>
+<li><p><code>for</code>&#x3068;<code>zip</code>&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#xFF0C;</p>
+</li>
+<li><p><code>for</code>&#x3068;<code>enumerate</code>&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x6587;&#x5B57;&#x5217;<code>ajiemwvtwamuoimufiosufcvwtwapocuwjepmovawemwapo</code>&#x306E;30&#x6587;&#x5B57;&#x76EE;&#x306E;&#x6587;&#x5B57;&#x3092;&#x7279;&#x5B9A;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.6.html" class="navigation navigation-prev " aria-label="Previous page: 1.6. Loop(while)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1.8.html" class="navigation navigation-next " aria-label="Next page: 1.8. Function">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.7. Loop(for)","level":"1.2.7","depth":2,"next":{"title":"1.8. Function","level":"1.2.8","depth":2,"path":"python_grammer/1.8.md","ref":"python_grammer/1.8.md","articles":[]},"previous":{"title":"1.6. Loop(while)","level":"1.2.6","depth":2,"path":"python_grammer/1.6.md","ref":"python_grammer/1.6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","livereload"],"pluginsConfig":{"katex":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python_grammer/1.7.md","mtime":"2018-08-28T03:24:39.017Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-25T06:18:24.893Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
