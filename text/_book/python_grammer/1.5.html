@@ -1,0 +1,472 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.5. Conditional Branch · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1.6.html" />
+    
+    
+    <link rel="prev" href="1.4.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    2. Python Grammer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1.html">
+            
+                <a href="1.1.html">
+            
+                    
+                    1.1. Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2.html">
+            
+                <a href="1.2.html">
+            
+                    
+                    1.2. Arithmetic Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3.html">
+            
+                <a href="1.3.html">
+            
+                    
+                    1.3. Variable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1.4.html">
+            
+                <a href="1.4.html">
+            
+                    
+                    1.4. String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="1.5.html">
+            
+                <a href="1.5.html">
+            
+                    
+                    1.5. Conditional Branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="1.6.html">
+            
+                <a href="1.6.html">
+            
+                    
+                    1.6. Loop(while)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="1.7.md">
+            
+                <span>
+            
+                    
+                    1.7. Loop(for)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="1.8.html">
+            
+                <a href="1.8.html">
+            
+                    
+                    1.8. Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.5. Conditional Branch</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="15-conditional-branch">1.5. Conditional Branch</h2>
+<h3 id="&#x6761;&#x4EF6;&#x5F0F;&#x3068;bool&#x5024;">&#x6761;&#x4EF6;&#x5F0F;&#x3068;bool&#x5024;</h3>
+<p>Python&#x3067;&#x306F;bool&#x5024;&#x3068;&#x3057;&#x3066;&#xFF0C;&#x771F;&#x3067;&#x3042;&#x308B;<code>True</code>&#x3068;&#x507D;&#x3067;&#x3042;&#x308B;<code>False</code>&#x304C;&#x5B9A;&#x7FA9;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF0E;<br>if&#x6587;&#x7B49;&#x3067;&#x7528;&#x3044;&#x308B;&#x6761;&#x4EF6;&#x5F0F;&#x306F;&#x8A55;&#x4FA1;&#x306E;&#x7D50;&#x679C;&#xFF0C;&#x3053;&#x308C;&#x3089;&#x306E;<code>True</code>&#x304B;<code>False</code>&#x304B;&#x306E;&#x3069;&#x3061;&#x3089;&#x304B;&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#xFF0E;<br>&#x5927;&#x6587;&#x5B57;&#x3067;&#x59CB;&#x307E;&#x308B;&#x70B9;&#x306B;&#x6CE8;&#x610F;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
+<h3 id="&#x6761;&#x4EF6;&#x5206;&#x5C90;">&#x6761;&#x4EF6;&#x5206;&#x5C90;</h3>
+<p>Python&#x306B;&#x304A;&#x3044;&#x3066;&#xFF0C;&#x6761;&#x4EF6;&#x5206;&#x5C90;&#x547D;&#x4EE4;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x8A18;&#x8FF0;&#x3057;&#x307E;&#x3059;&#xFF0E;<br>C&#x3084;Java&#x306E;&#x3088;&#x3046;&#x306B;<code>else if</code>&#x3067;&#x306F;&#x306A;&#x304F;&#xFF0C;<code>elif</code>&#x3068;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x70B9;&#x306B;&#x6CE8;&#x610F;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> &#x6761;&#x4EF6;&#x5F0F;<span class="hljs-number">1</span>:
+    &#x6761;&#x4EF6;&#x5F0F;<span class="hljs-number">1</span>&#x304C;<span class="hljs-keyword">True</span>&#x306E;&#x6642;&#x306E;&#x51E6;&#x7406;
+<span class="hljs-keyword">elif</span> &#x6761;&#x4EF6;&#x5F0F;<span class="hljs-number">2</span>:
+    &#x6761;&#x4EF6;&#x5F0F;<span class="hljs-number">1</span>&#x304C;<span class="hljs-keyword">False</span>&#x304B;&#x3064;&#x6761;&#x4EF6;&#x5F0F;<span class="hljs-number">2</span>&#x304C;<span class="hljs-keyword">True</span>&#x306E;&#x6642;&#x306E;&#x51E6;&#x7406;
+<span class="hljs-keyword">elif</span> &#x6761;&#x4EF6;&#x5F0F;<span class="hljs-number">3</span>:
+    &#x6761;&#x4EF6;&#x5F0F;<span class="hljs-number">1</span>,&#x6761;&#x4EF6;&#x5F0F;<span class="hljs-number">2</span>&#x304C;<span class="hljs-keyword">False</span>&#x304B;&#x3064;&#x6761;&#x4EF6;&#x5F0F;<span class="hljs-number">3</span>&#x304C;<span class="hljs-keyword">True</span>&#x306E;&#x6642;&#x306E;&#x51E6;&#x7406;
+...
+<span class="hljs-keyword">elif</span> &#x6761;&#x4EF6;&#x5F0F;N:
+    &#x6761;&#x4EF6;&#x5F0F;<span class="hljs-number">1</span> ~ &#x6761;&#x4EF6;&#x5F0F;N<span class="hljs-number">-1</span>&#x304C;<span class="hljs-keyword">False</span>&#x304B;&#x3064;&#x6761;&#x4EF6;&#x5F0F;N&#x304C;<span class="hljs-keyword">True</span>&#x306E;&#x6642;&#x306E;&#x51E6;&#x7406;
+<span class="hljs-keyword">else</span>:
+    &#x3069;&#x306E;&#x6761;&#x4EF6;&#x5F0F;&#x3082;<span class="hljs-keyword">False</span>&#x3060;&#x3063;&#x305F;&#x6642;&#x306E;&#x51E6;&#x7406;
+</code></pre>
+<h3 id="&#x6761;&#x4EF6;&#x5F0F;&#x3068;&#x6F14;&#x7B97;&#x5B50;">&#x6761;&#x4EF6;&#x5F0F;&#x3068;&#x6F14;&#x7B97;&#x5B50;</h3>
+<p>&#x6761;&#x4EF6;&#x5F0F;&#x306B;&#x306F;&#xFF0C;&#x4E3B;&#x306B;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306A;&#x6BD4;&#x8F03;&#x6F14;&#x7B97;&#x5B50;&#x3092;&#x7528;&#x3044;&#x307E;&#x3059;&#xFF0E;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x6F14;&#x7B97;&#x5B50;</th>
+<th style="text-align:center">&#x4F8B;</th>
+<th style="text-align:left">&#x6982;&#x8981;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">==</td>
+<td style="text-align:center">hoge == fuga</td>
+<td style="text-align:left">hoge&#x3068;fuga&#x304C;&#x7B49;&#x3057;&#x3044;&#x306A;&#x3089;True</td>
+</tr>
+<tr>
+<td style="text-align:center">!=</td>
+<td style="text-align:center">hoge != fuga</td>
+<td style="text-align:left">hoge&#x3068;fuga&#x304C;&#x7B49;&#x3057;&#x304F;&#x306A;&#x3044;&#x306A;&#x3089;True</td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;</td>
+<td style="text-align:center">hoge &gt; fuga</td>
+<td style="text-align:left">fuga&#x3088;&#x308A;hoge&#x304C;&#x5927;&#x304D;&#x3044;&#x306A;&#x3089;True</td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;=</td>
+<td style="text-align:center">hoge &gt;= fuga</td>
+<td style="text-align:left">hoge&#x304C;fuga&#x4EE5;&#x4E0A;&#x306A;&#x3089;True</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;</td>
+<td style="text-align:center">hoge &lt; fuga</td>
+<td style="text-align:left">hoge&#x3088;&#x308A;fuga&#x304C;&#x5927;&#x304D;&#x3044;&#x306A;&#x3089;True</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;=</td>
+<td style="text-align:center">hoge &lt;= fuga</td>
+<td style="text-align:left">hoge&#x304C;fuga&#x4EE5;&#x4E0B;&#x306A;&#x3089;True</td>
+</tr>
+</tbody>
+</table>
+<p>&#x306A;&#x304A;&#xFF0C;&#x8907;&#x6570;&#x306E;&#x6761;&#x4EF6;&#x5F0F;&#x3092;&#x5143;&#x306B;&#x8AD6;&#x7406;&#x6F14;&#x7B97;&#x3092;&#x884C;&#x3046;&#x5834;&#x5408;&#x306F;&#xFF0C;&#x4EE5;&#x4E0B;&#x306E;&#x8AD6;&#x7406;&#x6F14;&#x7B97;&#x5B50;&#x3092;&#x7528;&#x3044;&#x307E;&#x3059;&#xFF0E;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x6F14;&#x7B97;&#x5B50;</th>
+<th style="text-align:center">&#x4F8B;</th>
+<th style="text-align:left">&#x6982;&#x8981;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">and</td>
+<td style="text-align:center">hoge and fuga</td>
+<td style="text-align:left">hoge&#x3068;fuga&#x304C;&#x4E21;&#x65B9;True&#x306A;&#x3089;True</td>
+</tr>
+<tr>
+<td style="text-align:center">or</td>
+<td style="text-align:center">hoge or fuga</td>
+<td style="text-align:left">hoge&#x3068;fuga&#x306E;&#x5C11;&#x306A;&#x304F;&#x3068;&#x3082;&#x7247;&#x65B9;&#x304C;True&#x306A;&#x3089;True</td>
+</tr>
+<tr>
+<td style="text-align:center">not</td>
+<td style="text-align:center">not hoge</td>
+<td style="text-align:left">hoge&#x304C;False&#x306A;&#x3089;True</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x6761;&#x4EF6;&#x5206;&#x5C90;&#x306E;&#x4F8B;&#x5947;&#x9047;&#x5224;&#x5B9A;">&#x6761;&#x4EF6;&#x5206;&#x5C90;&#x306E;&#x4F8B;(&#x5947;&#x9047;&#x5224;&#x5B9A;)</h3>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>oddnum = <span class="hljs-number">1</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>evennum = <span class="hljs-number">2</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">if</span> oddnum % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>:
+<span class="hljs-meta">... </span>    print(<span class="hljs-string">&quot;Even!&quot;</span>)
+<span class="hljs-meta">... </span><span class="hljs-keyword">else</span>:
+<span class="hljs-meta">... </span>    print(<span class="hljs-string">&quot;Odd!&quot;</span>)
+<span class="hljs-meta">... </span>
+Odd!
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">if</span> evennum % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>:
+<span class="hljs-meta">... </span>    print(<span class="hljs-string">&quot;Even!&quot;</span>)
+<span class="hljs-meta">... </span><span class="hljs-keyword">else</span>:
+<span class="hljs-meta">... </span>    print(<span class="hljs-string">&quot;Odd!&quot;</span>)
+<span class="hljs-meta">... </span>
+Even!
+</code></pre>
+<h3 id="practice">Practice</h3>
+<p>&#x5909;&#x6570;<code>num</code>&#x306B;&#x306A;&#x3093;&#x3089;&#x304B;&#x306E;&#x5024;&#x3092;&#x4EE3;&#x5165;&#x3057;</p>
+<ul>
+<li><code>num</code>&#x304C;10&#x672A;&#x6E80;&#x306A;&#x3089;<code>Low</code></li>
+<li><code>num</code>&#x304C;10&#x4EE5;&#x4E0A;100&#x672A;&#x6E80;&#x306A;&#x3089;<code>Middle</code></li>
+<li><code>num</code>&#x304C;100&#x4EE5;&#x4E0A;&#x306A;&#x3089;<code>High</code></li>
+</ul>
+<p>&#x3068;&#x51FA;&#x529B;&#x3059;&#x308B;&#x6761;&#x4EF6;&#x5206;&#x5C90;&#x3092;&#x8A18;&#x8FF0;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.4.html" class="navigation navigation-prev " aria-label="Previous page: 1.4. String">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1.6.html" class="navigation navigation-next " aria-label="Next page: 1.6. Loop(while)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.5. Conditional Branch","level":"1.2.5","depth":2,"next":{"title":"1.6. Loop(while)","level":"1.2.6","depth":2,"path":"python_grammer/1.6.md","ref":"python_grammer/1.6.md","articles":[]},"previous":{"title":"1.4. String","level":"1.2.4","depth":2,"path":"python_grammer/1.4.md","ref":"python_grammer/1.4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","livereload"],"pluginsConfig":{"katex":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python_grammer/1.5.md","mtime":"2018-08-28T01:12:20.252Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-25T06:18:24.893Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
