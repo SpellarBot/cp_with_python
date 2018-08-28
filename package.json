@@ -1,0 +1,25 @@
+{
+  "name": "cp_with_pyhon",
+  "version": "1.0.0",
+  "description": "competitive programming with python",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Szarny@github.com/Szarny/cp_with_python.git"
+  },
+  "scripts": {
+    "init": "gitbook init",
+    "start": "gitbook serve",
+    "build": "gitbook build",
+    "publish": "gh-pages -d _book -m 'Auto publish book'"
+  },
+  "author": "Tsubasa Umeuchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Szarny/cp_with_python/issues"
+  },
+  "homepage": "https://github.com/Szarny/cp_with_python#readme"
+}
