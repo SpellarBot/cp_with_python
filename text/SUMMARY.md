@@ -10,3 +10,4 @@
     * [1.6. Loop(while)](python_grammer/1.6.md)
     * [1.7. Loop(for)](python_grammer/1.7.md)
     * [1.8. Function](python_grammer/1.8.md)
+    * [1.9. Input & Cast](python_grammer/1.9.md)
