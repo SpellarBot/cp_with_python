@@ -1,0 +1,511 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.10. Data Structures - list · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="1.9.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    2. Python Grammer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.1.html">
+            
+                <a href="1.1.html">
+            
+                    
+                    1.1. Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1.2.html">
+            
+                <a href="1.2.html">
+            
+                    
+                    1.2. Arithmetic Operations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1.3.html">
+            
+                <a href="1.3.html">
+            
+                    
+                    1.3. Variable
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="1.4.html">
+            
+                <a href="1.4.html">
+            
+                    
+                    1.4. String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="1.5.html">
+            
+                <a href="1.5.html">
+            
+                    
+                    1.5. Conditional Branch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="1.6.html">
+            
+                <a href="1.6.html">
+            
+                    
+                    1.6. Loop - while
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="1.7.html">
+            
+                <a href="1.7.html">
+            
+                    
+                    1.7. Loop - for
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="1.8.html">
+            
+                <a href="1.8.html">
+            
+                    
+                    1.8. Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="1.9.html">
+            
+                <a href="1.9.html">
+            
+                    
+                    1.9. Input & Cast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.10" data-path="1.10.html">
+            
+                <a href="1.10.html">
+            
+                    
+                    1.10. Data Structures - list
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.10. Data Structures - list</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="110-data-structures---list">1.10. Data Structures - list</h2>
+<h3 id="list&#x3068;&#x306F;">list&#x3068;&#x306F;</h3>
+<p>list&#x306F;&#x53EF;&#x5909;&#x9577;&#x914D;&#x5217;&#x3067;&#x3059;&#xFF0E;<br>&#x307E;&#x305F;&#xFF0C;&#x683C;&#x7D0D;&#x3059;&#x308B;&#x578B;&#x3084;&#x8981;&#x7D20;&#x6570;&#x306B;&#x5236;&#x9650;&#x306F;&#x306A;&#x3044;&#x305F;&#x3081;&#xFF0C;(&#x30E1;&#x30E2;&#x30EA;&#x304C;&#x8A31;&#x3059;&#x9650;&#x308A;)&#x597D;&#x304D;&#x306A;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x597D;&#x304D;&#x306A;&#x3060;&#x3051;&#x683C;&#x7D0D;&#x3055;&#x305B;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF0E;</p>
+<h3 id="list&#x306E;&#x5B9A;&#x7FA9;&#x65B9;&#x6CD5;">list&#x306E;&#x5B9A;&#x7FA9;&#x65B9;&#x6CD5;</h3>
+<p>&#x7A7A;&#x306E;list&#x3092;&#x751F;&#x6210;&#x3059;&#x308B;&#x3068;&#x304D;&#x306F;&#xFF0C;<code>[]</code>&#x304B;<code>list()</code>&#x3092;&#x7528;&#x3044;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>empty_list = []
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(empty_list)
+[]
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>empty_list2 = list()
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(empty_list)
+[]
+</code></pre>
+<p>&#x6700;&#x521D;&#x304B;&#x3089;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x6301;&#x305F;&#x305B;&#x308B;&#x3053;&#x3068;&#x3082;&#x53EF;&#x80FD;&#x3067;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>num_list = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(num_list)
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+</code></pre>
+<h3 id="list&#x306E;&#x53C2;&#x7167;&#x65B9;&#x6CD5;">list&#x306E;&#x53C2;&#x7167;&#x65B9;&#x6CD5;</h3>
+<p>list&#x306E;&#x53C2;&#x7167;&#x65B9;&#x6CD5;&#x306F;&#xFF0C;&#x6587;&#x5B57;&#x5217;&#x306B;&#x5BFE;&#x3059;&#x308B;&#x305D;&#x308C;&#x3068;&#x540C;&#x69D8;&#x306B;&#x884C;&#x3046;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF0E;</p>
+<ul>
+<li>&#x7279;&#x5B9A;&#x306E;&#x8981;&#x7D20;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3059;&#x308B;&#x3068;&#x304D;&#x306F;&#x6DFB;&#x5B57;&#x3067;&#x6307;&#x5B9A;&#x3059;&#x308B;</li>
+<li>&#x8907;&#x6570;&#x306E;&#x8981;&#x7D20;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3059;&#x308B;&#x3068;&#x304D;&#x306F;&#x30B9;&#x30E9;&#x30A4;&#x30B9;&#x8A18;&#x6CD5;(<code>[start:stop:step]</code>)&#x3092;&#x7528;&#x3044;&#x308B;</li>
+<li>list&#x306E;&#x9577;&#x3055;(&#x8981;&#x7D20;&#x6570;)&#x306F;<code>len()</code>&#x306B;&#x3088;&#x3063;&#x3066;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x308B;&#xFF0E;</li>
+</ul>
+<p>&#x4EE5;&#x4E0B;&#x306B;&#x4F8B;&#x3092;&#x793A;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lang_list = [<span class="hljs-string">&quot;Python&quot;</span>, <span class="hljs-string">&quot;Ruby&quot;</span>, <span class="hljs-string">&quot;C&quot;</span>, <span class="hljs-string">&quot;Swift&quot;</span>, <span class="hljs-string">&quot;Java&quot;</span>, <span class="hljs-string">&quot;Kotlin&quot;</span>, <span class="hljs-string">&quot;Rust&quot;</span>]
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(lang_list[<span class="hljs-number">0</span>])
+Python
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(lang_list[<span class="hljs-number">-1</span>])
+Rust
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(lang_list[<span class="hljs-number">2</span>:<span class="hljs-number">5</span>])
+[<span class="hljs-string">&apos;C&apos;</span>, <span class="hljs-string">&apos;Swift&apos;</span>, <span class="hljs-string">&apos;Java&apos;</span>]
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(lang_list[::<span class="hljs-number">-1</span>])
+[<span class="hljs-string">&apos;Rust&apos;</span>, <span class="hljs-string">&apos;Kotlin&apos;</span>, <span class="hljs-string">&apos;Java&apos;</span>, <span class="hljs-string">&apos;Swift&apos;</span>, <span class="hljs-string">&apos;C&apos;</span>, <span class="hljs-string">&apos;Ruby&apos;</span>, <span class="hljs-string">&apos;Python&apos;</span>]
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(lang_list[::<span class="hljs-number">2</span>])
+[<span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;C&apos;</span>, <span class="hljs-string">&apos;Java&apos;</span>, <span class="hljs-string">&apos;Rust&apos;</span>]
+
+<span class="hljs-meta">&gt;&gt;&gt; </span>print(len(lang_list))
+<span class="hljs-number">7</span>
+</code></pre>
+<h3 id="list&#x306E;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;">list&#x306E;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;</h3>
+<p>list&#x306B;&#x306F;&#xFF0C;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306A;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x304C;&#x7528;&#x610F;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#xFF0E;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x30E1;&#x30BD;&#x30C3;&#x30C9;</th>
+<th style="text-align:left">&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>list.append(x)</code></td>
+<td style="text-align:left">list&#x306E;&#x672B;&#x5C3E;&#x306B;<code>x</code>&#x3092;&#x8FFD;&#x52A0;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>list.insert(i, x)</code></td>
+<td style="text-align:left">list&#x306E;<code>i</code>&#x756A;&#x76EE;&#x306B;<code>x</code>&#x3092;&#x633F;&#x5165;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>list.index(x)</code></td>
+<td style="text-align:left">&#x5148;&#x982D;&#x304B;&#x3089;&#x898B;&#x3066;list&#x5185;&#x3067;<code>x</code>&#x304C;&#x521D;&#x3081;&#x3066;&#x73FE;&#x308C;&#x308B;&#x4F4D;&#x7F6E;&#x306E;&#x6DFB;&#x5B57;&#x3092;&#x8FD4;&#x5374;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>list.count(x)</code></td>
+<td style="text-align:left">list&#x5185;&#x3067;<code>x</code>&#x304C;&#x73FE;&#x308C;&#x308B;&#x56DE;&#x6570;&#x3092;&#x8FD4;&#x5374;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>list.remove(x)</code></td>
+<td style="text-align:left">&#x5148;&#x982D;&#x304B;&#x3089;&#x307F;&#x3066;list&#x5185;&#x3067;&#x521D;&#x3081;&#x3066;&#x73FE;&#x308C;&#x308B;<code>x</code>&#x3092;&#x524A;&#x9664;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>list.pop(i)</code></td>
+<td style="text-align:left">list&#x306E;<code>i</code>&#x756A;&#x76EE;&#x306E;&#x8981;&#x7D20;&#x3092;&#x524A;&#x9664;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>list.sort()</code></td>
+<td style="text-align:left">list&#x3092;&#x6607;&#x9806;&#x306B;&#x4E26;&#x3079;&#x66FF;&#x3048;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>list.sort(reverse=True)</code></td>
+<td style="text-align:left">list&#x3092;&#x964D;&#x9806;&#x306B;&#x4E26;&#x3079;&#x66FF;&#x3048;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x307E;&#x305F;&#xFF0C;list&#x56FA;&#x6709;&#x306E;&#x64CD;&#x4F5C;&#x3067;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x304C;&#xFF0C;&#x4EE5;&#x4E0B;&#x306E;&#x7D44;&#x307F;&#x8FBC;&#x307F;&#x95A2;&#x6570;&#x306F;&#x7AF6;&#x6280;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x5185;&#x3067;list&#x306B;&#x5BFE;&#x3057;&#x3066;&#x7528;&#x3044;&#x3089;&#x308C;&#x308B;&#x3053;&#x3068;&#x304C;&#x591A;&#x3044;&#x3067;&#x3059;&#xFF0E;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x95A2;&#x6570;</th>
+<th style="text-align:left">&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>max(&#x5F15;&#x6570;1, &#x5F15;&#x6570;2, ..., &#x5F15;&#x6570;N)</code></td>
+<td style="text-align:left">&#x5F15;&#x6570;&#x306E;&#x4E2D;&#x3067;&#x6700;&#x5927;&#x306E;&#x5024;&#x3092;&#x8FD4;&#x5374;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>max(list)</code></td>
+<td style="text-align:left">list&#x306E;&#x4E2D;&#x3067;&#x6700;&#x5927;&#x306E;&#x5024;&#x3092;&#x8FD4;&#x5374;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>min(&#x5F15;&#x6570;1, &#x5F15;&#x6570;2, ..., &#x5F15;&#x6570;N)</code></td>
+<td style="text-align:left">&#x5F15;&#x6570;&#x306E;&#x4E2D;&#x3067;&#x6700;&#x5C0F;&#x306E;&#x5024;&#x3092;&#x8FD4;&#x5374;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>min(list)</code></td>
+<td style="text-align:left">list&#x306E;&#x4E2D;&#x3067;&#x6700;&#x5C0F;&#x306E;&#x5024;&#x3092;&#x8FD4;&#x5374;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>sorted(list)</code></td>
+<td style="text-align:left">list&#x3092;&#x6607;&#x9806;&#x306B;&#x4E26;&#x3079;&#x66FF;&#x3048;&#x305F;&#x7D50;&#x679C;&#x3092;&#x8FD4;&#x5374;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>sorted(list, reverse=True)</code></td>
+<td style="text-align:left">list&#x3092;&#x964D;&#x9806;&#x306B;&#x4E26;&#x3079;&#x66FF;&#x3048;&#x305F;&#x7D50;&#x679C;&#x3092;&#x8FD4;&#x5374;</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>sum(list)</code></td>
+<td style="text-align:left">list&#x306E;&#x8981;&#x7D20;&#x306E;&#x7DCF;&#x548C;&#x3092;&#x8FD4;&#x5374;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="list&#x3068;for">list&#x3068;for</h3>
+<p>list&#x306F;&#x6587;&#x5B57;&#x5217;&#x3068;&#x540C;&#x69D8;&#x306B;&#x53CD;&#x5FA9;&#x53EF;&#x80FD;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306A;&#x306E;&#x3067;&#xFF0C;for&#x3068;&#x4F75;&#x7528;&#x3067;&#x304D;&#x307E;&#x3059;&#xFF0E;<br>&#x8A18;&#x8FF0;&#x65B9;&#x6CD5;&#x306F;&#xFF0C;&#x307E;&#x305F;&#x3082;&#x3084;&#x6587;&#x5B57;&#x5217;&#x306E;&#x305D;&#x308C;&#x3068;&#x5168;&#x304F;&#x540C;&#x3058;&#x3067;&#x3059;&#xFF0E;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.9.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 1.9. Input & Cast">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.10. Data Structures - list","level":"1.2.10","depth":2,"previous":{"title":"1.9. Input & Cast","level":"1.2.9","depth":2,"path":"python_grammer/1.9.md","ref":"python_grammer/1.9.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","livereload"],"pluginsConfig":{"katex":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python_grammer/1.10.md","mtime":"2018-08-28T07:14:26.959Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-25T06:18:24.893Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
