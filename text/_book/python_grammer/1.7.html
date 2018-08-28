@@ -350,7 +350,11 @@ o
 <pre><code>for &#x5909;&#x6570;1, &#x5909;&#x6570;2, ..., &#x5909;&#x6570;N in zip(&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;1, &#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;2, ..., &#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;N):
     &#x51E6;&#x7406;
 </code></pre><p>&#x4EE5;&#x4E0B;&#x306B;&#x5B9F;&#x4F8B;&#x3092;&#x793A;&#x3057;&#x307E;&#x3059;&#xFF0E;</p>
-<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> l1, l2, l3 <span class="hljs-keyword">in</span> zip(s1, s2, s3):
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>s1 = <span class="hljs-string">&quot;abc&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>s2 = <span class="hljs-string">&quot;def&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>s3 = <span class="hljs-string">&quot;ghi&quot;</span>
+&gt;&gt;&gt;
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> l1, l2, l3 <span class="hljs-keyword">in</span> zip(s1, s2, s3):
 <span class="hljs-meta">... </span>    print(l1, l2, l3)
 <span class="hljs-meta">... </span>
 a d g
@@ -388,8 +392,6 @@ c f i
 <h1 id="practice">Practice</h1>
 <ul>
 <li><p><code>for</code>&#x3068;<code>range</code>&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x6761;&#x4EF6;&#x5206;&#x5C90;&#x3092;&#x7528;&#x3044;&#x305A;&#x306B;<code>1</code>&#x304B;&#x3089;<code>100</code>&#x306E;&#x7BC4;&#x56F2;&#x306B;&#x5B58;&#x5728;&#x3059;&#x308B;&#x5076;&#x6570;&#x306E;&#x307F;&#x3092;&#x51FA;&#x529B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
-</li>
-<li><p><code>for</code>&#x3068;<code>zip</code>&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#xFF0C;</p>
 </li>
 <li><p><code>for</code>&#x3068;<code>enumerate</code>&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#xFF0C;&#x6587;&#x5B57;&#x5217;<code>ajiemwvtwamuoimufiosufcvwtwapocuwjepmovawemwapo</code>&#x306E;30&#x6587;&#x5B57;&#x76EE;&#x306E;&#x6587;&#x5B57;&#x3092;&#x7279;&#x5B9A;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#xFF0E;</p>
 </li>
@@ -437,7 +439,7 @@ c f i
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.7. Loop(for)","level":"1.2.7","depth":2,"next":{"title":"1.8. Function","level":"1.2.8","depth":2,"path":"python_grammer/1.8.md","ref":"python_grammer/1.8.md","articles":[]},"previous":{"title":"1.6. Loop(while)","level":"1.2.6","depth":2,"path":"python_grammer/1.6.md","ref":"python_grammer/1.6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","livereload"],"pluginsConfig":{"katex":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python_grammer/1.7.md","mtime":"2018-08-28T03:24:39.017Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-25T06:18:24.893Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.7. Loop(for)","level":"1.2.7","depth":2,"next":{"title":"1.8. Function","level":"1.2.8","depth":2,"path":"python_grammer/1.8.md","ref":"python_grammer/1.8.md","articles":[]},"previous":{"title":"1.6. Loop(while)","level":"1.2.6","depth":2,"path":"python_grammer/1.6.md","ref":"python_grammer/1.6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex","livereload"],"pluginsConfig":{"katex":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python_grammer/1.7.md","mtime":"2018-08-28T05:06:05.728Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-25T06:18:24.893Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
